@@ -18,7 +18,7 @@
 <table>
     <thead> 
         <tr>
-            <th>Title</th>
+            <th><%= sort_link(@q, :title) %></th>
             <th>Author</th>
             <th>Status</th>
             <th>Friend Name</th>
@@ -45,3 +45,4 @@
     </tbody>
 </table>
 
+<%= paginate @bookst %>
