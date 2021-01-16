@@ -9,7 +9,7 @@
                 <%= f.label :status_eq, "Status" %>
                 <%= f.select :status_eq, options_for_select(Book.statuses ,@q.status_eq), {},{class: "form-control"} %> 
             </div>
-
+            
             <%= f.submit "Search", class: "btn btn-primary" %> 
         <% end %>
     </div>

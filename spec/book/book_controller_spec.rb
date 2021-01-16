@@ -1,16 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe BooksController do
-    describe "POST index" do
-      it "assigns title" do
-        book = Book.create
-        post :index
-        expect(assigns(:books)).to eq([book])
-      end
-  
-      it "renders the index template" do
-        post :index
-        expect(response).to render_template("index")
+    describe "GET new" do
+      it "render index template" do
+        get :new
+        expect(response).to render_template("new")
       end
     end
   end

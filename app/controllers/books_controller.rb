@@ -4,7 +4,6 @@ class BooksController < ApplicationController
         @bookst = Book.all.page(params[:page]) 
         @q = Book.ransack(params[:q])
         @books = @q.result(distinct: true)
-
     end
 
     def new
