@@ -5,7 +5,10 @@ class BooksController < ApplicationController
         @q = Book.ransack(params[:q])
         @books = @q.result(distinct: true)
     end
-
+    
+    def show
+    end
+    
     def new
         @book = Book.new
     end

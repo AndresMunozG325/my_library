@@ -109,6 +109,7 @@ GEM
     nokogiri (1.11.1)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
+    pg (1.2.3)
     puma (4.3.7)
       nio4r (~> 2.0)
     racc (1.5.2)
@@ -221,6 +222,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   kaminari!
   listen (~> 3.2)
+  pg
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
   ransack
@@ -228,7 +230,7 @@ DEPENDENCIES
   sass-rails (>= 6)
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3 (~> 1.4)
+  sqlite3
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)
